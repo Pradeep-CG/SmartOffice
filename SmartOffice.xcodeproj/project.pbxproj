@@ -14,6 +14,16 @@
 		274E05F92817FA4D0091DEFC /* SmartOffice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 274E05F72817FA4D0091DEFC /* SmartOffice.xcdatamodeld */; };
 		274E05FB2817FA510091DEFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 274E05FA2817FA510091DEFC /* Assets.xcassets */; };
 		274E05FE2817FA510091DEFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 274E05FC2817FA510091DEFC /* LaunchScreen.storyboard */; };
+		274E060F2817FF770091DEFC /* HttpUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274E060E2817FF770091DEFC /* HttpUtility.swift */; };
+		274E06112817FF9C0091DEFC /* LoginValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274E06102817FF9C0091DEFC /* LoginValidation.swift */; };
+		274E06132817FFE60091DEFC /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274E06122817FFE60091DEFC /* ValidationResult.swift */; };
+		274E0615281800010091DEFC /* LoginResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274E0614281800010091DEFC /* LoginResource.swift */; };
+		274E0617281800210091DEFC /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274E0616281800210091DEFC /* Common.swift */; };
+		274E0619281800410091DEFC /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274E0618281800410091DEFC /* LoginResponse.swift */; };
+		274E061B281800590091DEFC /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274E061A281800590091DEFC /* LoginRequest.swift */; };
+		274E061D2818008E0091DEFC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274E061C2818008E0091DEFC /* LoginViewController.swift */; };
+		274E0620281800EA0091DEFC /* LoginExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274E061F281800EA0091DEFC /* LoginExtension.swift */; };
+		274E0622281801450091DEFC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274E0621281801450091DEFC /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +36,16 @@
 		274E05FA2817FA510091DEFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		274E05FD2817FA510091DEFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		274E05FF2817FA510091DEFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		274E060E2817FF770091DEFC /* HttpUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpUtility.swift; sourceTree = "<group>"; };
+		274E06102817FF9C0091DEFC /* LoginValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginValidation.swift; sourceTree = "<group>"; };
+		274E06122817FFE60091DEFC /* ValidationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationResult.swift; sourceTree = "<group>"; };
+		274E0614281800010091DEFC /* LoginResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResource.swift; sourceTree = "<group>"; };
+		274E0616281800210091DEFC /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		274E0618281800410091DEFC /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		274E061A281800590091DEFC /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		274E061C2818008E0091DEFC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		274E061F281800EA0091DEFC /* LoginExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginExtension.swift; sourceTree = "<group>"; };
+		274E0621281801450091DEFC /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +78,11 @@
 		274E05ED2817FA4C0091DEFC /* SmartOffice */ = {
 			isa = PBXGroup;
 			children = (
+				274E06062817FE360091DEFC /* Service */,
+				274E06072817FE3F0091DEFC /* Validation */,
+				274E06082817FE5C0091DEFC /* DataResources */,
+				274E06092817FE700091DEFC /* Common */,
+				274E06052817FE1C0091DEFC /* MVVM */,
 				274E05EE2817FA4C0091DEFC /* AppDelegate.swift */,
 				274E05F02817FA4C0091DEFC /* SceneDelegate.swift */,
 				274E05F22817FA4C0091DEFC /* ViewController.swift */,
@@ -68,6 +93,83 @@
 				274E05F72817FA4D0091DEFC /* SmartOffice.xcdatamodeld */,
 			);
 			path = SmartOffice;
+			sourceTree = "<group>";
+		};
+		274E06052817FE1C0091DEFC /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				274E060B2817FE9F0091DEFC /* Model */,
+				274E060C2817FEA80091DEFC /* View */,
+				274E060D2817FEB00091DEFC /* ViewModel */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		274E06062817FE360091DEFC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				274E060E2817FF770091DEFC /* HttpUtility.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		274E06072817FE3F0091DEFC /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				274E06102817FF9C0091DEFC /* LoginValidation.swift */,
+				274E06122817FFE60091DEFC /* ValidationResult.swift */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		274E06082817FE5C0091DEFC /* DataResources */ = {
+			isa = PBXGroup;
+			children = (
+				274E0614281800010091DEFC /* LoginResource.swift */,
+			);
+			path = DataResources;
+			sourceTree = "<group>";
+		};
+		274E06092817FE700091DEFC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				274E0616281800210091DEFC /* Common.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		274E060B2817FE9F0091DEFC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				274E0618281800410091DEFC /* LoginResponse.swift */,
+				274E061A281800590091DEFC /* LoginRequest.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		274E060C2817FEA80091DEFC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				274E061E281800D60091DEFC /* Extensions */,
+				274E061C2818008E0091DEFC /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		274E060D2817FEB00091DEFC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				274E0621281801450091DEFC /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		274E061E281800D60091DEFC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				274E061F281800EA0091DEFC /* LoginExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +243,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274E061D2818008E0091DEFC /* LoginViewController.swift in Sources */,
+				274E060F2817FF770091DEFC /* HttpUtility.swift in Sources */,
 				274E05F32817FA4C0091DEFC /* ViewController.swift in Sources */,
 				274E05EF2817FA4C0091DEFC /* AppDelegate.swift in Sources */,
 				274E05F12817FA4C0091DEFC /* SceneDelegate.swift in Sources */,
+				274E0619281800410091DEFC /* LoginResponse.swift in Sources */,
+				274E0622281801450091DEFC /* LoginViewModel.swift in Sources */,
+				274E0617281800210091DEFC /* Common.swift in Sources */,
+				274E06132817FFE60091DEFC /* ValidationResult.swift in Sources */,
+				274E06112817FF9C0091DEFC /* LoginValidation.swift in Sources */,
 				274E05F92817FA4D0091DEFC /* SmartOffice.xcdatamodeld in Sources */,
+				274E0615281800010091DEFC /* LoginResource.swift in Sources */,
+				274E0620281800EA0091DEFC /* LoginExtension.swift in Sources */,
+				274E061B281800590091DEFC /* LoginRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
